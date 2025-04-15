@@ -1,0 +1,18 @@
+cmd prompt
+COMMANDS-
+docker pull hello world
+docker run hello-world
+docker run -it ubuntu
+exit
+docker stop <id>
+
+
+docker network ls
+docker network create mongo-network
+docker network ls
+docker run -d-p 27017:27017--name mongo--network mongo-network-e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=admin mongo
+
+docker run -d-p 8081:8081--name mongo-express--network mongo-network-e ME_CONFIG_MONGODB_ADMINUSER NAME=admin-E ME_CONFIG_MONGODB_ADMIN PASSWORD=admin-E
+ME_CONFIG_MONGODB
+
+DOCKER NETWORK-Two container talk with hasle and form an isolated network.
